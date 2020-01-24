@@ -100,8 +100,11 @@ def tidying(data):
                        'Sex',
                        'Age'
                        ]
+    country_region_dict = {156: 'China', 344: 'Hong Kong', 158: 'Taiwan', 840: 'US'}
+
     data = data[selected_columns]
     data.columns = renames_columns
+    data = data.replace({'Country': country_region_dict})
     return data
 
 
@@ -110,5 +113,3 @@ China = pd.read_excel('Data_raw/China/China_code.xlsx')
 HongKong = pd.read_excel('Data_raw/Hong Kong/HongKong_code.xlsx')
 Taiwan = pd.read_excel('Data_raw/Taiwan/Taiwan_code.xlsx')
 US = pd.read_excel('Data_raw/US/US_code.xlsx')
-
-# Apply the function and bind rows
