@@ -3,7 +3,7 @@ import pandas as pd
 
 
 # Define functions
-def tidying(data):
+def tidying(dataset_list):
     selected_columns = ['V2: Country Code',
                         'V4: Important in life: Family',
                         'V5: Important in life: Friends',
@@ -38,6 +38,8 @@ def tidying(data):
                         'V94: Political action recently done: Any other act of protest',
                         'V95: Self positioning in political scale',
                         'V96: Income equality',
+                        'V97: Private vs state ownership of business',
+                        'V98: Government responsibility',
                         'V99: Competition good or harmful',
                         'V100: Hard work brings success',
                         'V101: Wealth accumulation',
@@ -46,13 +48,14 @@ def tidying(data):
                         'V116: Confidence: Political Parties',
                         'V137: Democracy: The state makes people\'s incomes equal',
                         'V140: Importance of democracy',
+                        'V141: How democratically is this country being governed today',
                         'V142: How much respect is there for individual human rights nowadays in this country',
                         'V238: Social class (subjective)',
                         'V239: Scale of incomes',
                         'V240: Sex',
                         'V242: Age'
                         ]
-    renames_columns = ['Country',
+    renamed_columns = ['CountryRegion',
                        'Family',
                        'Friends',
                        'Leisure',
@@ -86,6 +89,8 @@ def tidying(data):
                        'Politics_done_protest',
                        'Political_scale',
                        'Income_equality',
+                       'Private_state_ownership',
+                       'Government_duty',
                        'Competition',
                        'Hard_work',
                        'Wealth_accumulation',
@@ -94,18 +99,36 @@ def tidying(data):
                        'Confidence_parties',
                        'Democracy_state_income_equal',
                        'Democracy_importance',
+                       'Democracy_reality',
                        'Human_rights',
                        'Social_class',
                        'Income_scale',
                        'Sex',
                        'Age'
                        ]
-    country_region_dict = {156: 'China', 344: 'Hong Kong', 158: 'Taiwan', 840: 'US'}
 
-    data = data[selected_columns]
-    data.columns = renames_columns
-    data = data.replace({'Country': country_region_dict})
-    return data
+    # Dictionaries for data recoding
+    country_region_dict = {156: 'China', 344: 'Hong Kong', 158: 'Taiwan', 840: 'US'}
+    aims_of_country_dict = {1: 'Economic growth', 2: 'Defense', 3: 'People\'s voice', 4: 'Environment'}
+    aims_of_respondent_dict = {1: 'Order', 2: 'People\'s voice', 3: 'Fight rising price', 4: 'Freedom of speech'}
+    aims_most_important_dict = {1: 'Economic stability', 2: 'Humanity', 3: 'Ideas', 4: 'Fight against crime'}
+
+    tidy_dataset = []
+    for dataset in dataset_list:
+        dataset = dataset[selected_columns]
+        dataset.columns = renamed_columns
+        dataset = dataset.replace({'CountryRegion': country_region_dict,
+                                   'Aim_country_first': aims_of_country_dict,
+                                   'Aim_country_second': aims_of_country_dict,
+                                   'Aim_respondent_first': aims_of_respondent_dict,
+                                   'Aim_respondent_second': aims_of_respondent_dict,
+                                   'Most_important_first': aims_most_important_dict,
+                                   'Most_important_second': aims_most_important_dict
+                                   }
+                                  )
+        tidy_dataset.append(dataset)
+
+    return pd.concat(tidy_dataset)
 
 
 # Import datasets
@@ -113,3 +136,5 @@ China = pd.read_excel('Data_raw/China/China_code.xlsx')
 HongKong = pd.read_excel('Data_raw/Hong Kong/HongKong_code.xlsx')
 Taiwan = pd.read_excel('Data_raw/Taiwan/Taiwan_code.xlsx')
 US = pd.read_excel('Data_raw/US/US_code.xlsx')
+
+WVS_dataset = tidying([China, HongKong, Taiwan, US])

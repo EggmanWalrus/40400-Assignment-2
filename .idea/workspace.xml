@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0db3f15f-e876-4373-952c-6a4e8ed3d987" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/markdown-navigator-enh.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/markdown-navigator.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tidying.py" beforeDir="false" afterPath="$PROJECT_DIR$/tidying.py" afterDir="false" />
     </list>
@@ -9,6 +11,9 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="Assignment 2" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -40,7 +45,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RunManager">
     <configuration name="tidying" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
@@ -93,7 +98,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1579814065949</updated>
-      <workItem from="1579814067658" duration="8678000" />
+      <workItem from="1579814067658" duration="12441000" />
+      <workItem from="1579915048459" duration="142000" />
+      <workItem from="1579915216479" duration="787000" />
     </task>
     <task id="LOCAL-00001" summary="Added assignment requirements">
       <created>1579814246149</created>
@@ -116,7 +123,14 @@
       <option name="project" value="LOCAL" />
       <updated>1579843559505</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Updated functions">
+      <created>1579845900034</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1579845900034</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -127,57 +141,59 @@
     <MESSAGE value="Added assignment requirements" />
     <MESSAGE value="Added raw data of Mainland China, Hong Kong, and Taiwan" />
     <MESSAGE value="Started the py script for data tidying" />
-    <option name="LAST_COMMIT_MESSAGE" value="Started the py script for data tidying" />
+    <MESSAGE value="Updated functions" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated functions" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="375" y="134" key="CommitChangelistDialog2" timestamp="1579843559177">
+    <state x="648" y="283" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1579915172307">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="648" y="283" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1579915172307" />
+    <state x="375" y="134" key="CommitChangelistDialog2" timestamp="1579845899692">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="328" y="130" key="CommitChangelistDialog2/0.0.1680.1050@0.0.1680.1050" timestamp="1579814246022" />
-    <state x="375" y="134" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1579843559177" />
-    <state width="1878" height="297" key="GridCell.Tab.0.bottom" timestamp="1579843484886">
+    <state x="375" y="134" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1579845899692" />
+    <state width="1878" height="277" key="GridCell.Tab.0.bottom" timestamp="1579916005035">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1878" height="297" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1579843484886" />
-    <state width="1878" height="297" key="GridCell.Tab.0.center" timestamp="1579843484885">
+    <state width="1878" height="277" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1579916005035" />
+    <state width="1878" height="297" key="GridCell.Tab.0.bottom/1920.70.1680.1050/0.0.1920.1080@0.0.1920.1080" timestamp="1579877954183" />
+    <state width="1878" height="277" key="GridCell.Tab.0.center" timestamp="1579916005034">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1878" height="297" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1579843484885" />
-    <state width="1878" height="297" key="GridCell.Tab.0.left" timestamp="1579843484884">
+    <state width="1878" height="277" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1579916005034" />
+    <state width="1878" height="297" key="GridCell.Tab.0.center/1920.70.1680.1050/0.0.1920.1080@0.0.1920.1080" timestamp="1579877954182" />
+    <state width="1878" height="277" key="GridCell.Tab.0.left" timestamp="1579916005033">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1878" height="297" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1579843484884" />
-    <state width="1878" height="297" key="GridCell.Tab.0.right" timestamp="1579843484886">
+    <state width="1878" height="277" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1579916005033" />
+    <state width="1878" height="297" key="GridCell.Tab.0.left/1920.70.1680.1050/0.0.1920.1080@0.0.1920.1080" timestamp="1579877954181" />
+    <state width="1878" height="277" key="GridCell.Tab.0.right" timestamp="1579916005035">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1878" height="297" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1579843484886" />
-    <state x="390" y="169" key="SettingsEditor" timestamp="1579838477980">
+    <state width="1878" height="277" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1579916005035" />
+    <state width="1878" height="297" key="GridCell.Tab.0.right/1920.70.1680.1050/0.0.1920.1080@0.0.1920.1080" timestamp="1579877954182" />
+    <state x="390" y="169" key="SettingsEditor" timestamp="1579915570389">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="341" y="164" key="SettingsEditor/0.0.1680.1050@0.0.1680.1050" timestamp="1579814084917" />
-    <state x="390" y="169" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1579838477980" />
-    <state x="503" y="274" key="Vcs.Push.Dialog.v2" timestamp="1579843561027">
+    <state x="390" y="169" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1579915570389" />
+    <state x="503" y="274" key="Vcs.Push.Dialog.v2" timestamp="1579845905807">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="440" y="266" key="Vcs.Push.Dialog.v2/0.0.1680.1050@0.0.1680.1050" timestamp="1579814250843" />
-    <state x="503" y="274" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1579843561027" />
+    <state x="503" y="274" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1579845905807" />
     <state width="960" height="540" key="XDebugger.FullValuePopup" timestamp="1579842950162">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="960" height="540" key="XDebugger.FullValuePopup/0.0.1920.1080@0.0.1920.1080" timestamp="1579842950162" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/tidying.py</url>
-          <line>5</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <state x="637" y="372" key="com.intellij.ide.util.TipDialog" timestamp="1579916021870">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="637" y="372" key="com.intellij.ide.util.TipDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1579916021870" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Assignment_2$tidying.coverage" NAME="tidying Coverage Results" MODIFIED="1579843477432" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Assignment_2$tidying.coverage" NAME="tidying Coverage Results" MODIFIED="1579915689154" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
