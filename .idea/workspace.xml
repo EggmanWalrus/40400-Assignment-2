@@ -100,7 +100,7 @@
       <workItem from="1579915048459" duration="142000" />
       <workItem from="1579915216479" duration="787000" />
       <workItem from="1579916020557" duration="6676000" />
-      <workItem from="1579924939905" duration="668000" />
+      <workItem from="1579924939905" duration="2200000" />
     </task>
     <task id="LOCAL-00001" summary="Added assignment requirements">
       <created>1579814246149</created>
@@ -137,7 +137,14 @@
       <option name="project" value="LOCAL" />
       <updated>1579916206186</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Generated basic histograms and boxplots">
+      <created>1579925693442</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1579925693442</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -150,18 +157,19 @@
     <MESSAGE value="Started the py script for data tidying" />
     <MESSAGE value="Updated functions" />
     <MESSAGE value="Completed cleaning data" />
-    <option name="LAST_COMMIT_MESSAGE" value="Completed cleaning data" />
+    <MESSAGE value="Generated basic histograms and boxplots" />
+    <option name="LAST_COMMIT_MESSAGE" value="Generated basic histograms and boxplots" />
   </component>
   <component name="WindowStateProjectService">
     <state x="648" y="283" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1579915172307">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="648" y="283" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1579915172307" />
-    <state x="375" y="110" key="CommitChangelistDialog2" timestamp="1579916205961">
+    <state x="375" y="110" key="CommitChangelistDialog2" timestamp="1579925693318">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="328" y="130" key="CommitChangelistDialog2/0.0.1680.1050@0.0.1680.1050" timestamp="1579814246022" />
-    <state x="375" y="110" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1579916205961" />
+    <state x="375" y="110" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1579925693318" />
     <state width="1878" height="277" key="GridCell.Tab.0.bottom" timestamp="1579916005035">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -187,11 +195,11 @@
     </state>
     <state x="341" y="164" key="SettingsEditor/0.0.1680.1050@0.0.1680.1050" timestamp="1579814084917" />
     <state x="390" y="169" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1579916368895" />
-    <state x="503" y="274" key="Vcs.Push.Dialog.v2" timestamp="1579916207787">
+    <state x="503" y="274" key="Vcs.Push.Dialog.v2" timestamp="1579925697733">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="440" y="266" key="Vcs.Push.Dialog.v2/0.0.1680.1050@0.0.1680.1050" timestamp="1579814250843" />
-    <state x="503" y="274" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1579916207787" />
+    <state x="503" y="274" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1579925697733" />
     <state width="960" height="540" key="XDebugger.FullValuePopup" timestamp="1579842950162">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
