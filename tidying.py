@@ -1,9 +1,10 @@
 # Import libraries
 import pandas as pd
+import os
 
 
 # Define functions
-def tidying(dataset_list):
+def tidying(dataset):
     selected_columns = ['V2: Country Code',
                         'V4: Important in life: Family',
                         'V5: Important in life: Friends',
@@ -108,33 +109,91 @@ def tidying(dataset_list):
                        ]
 
     # Dictionaries for data recoding
-    country_region_dict = {156: 'China', 344: 'Hong Kong', 158: 'Taiwan', 840: 'US'}
+    country_region_dict = {12: 'Algeria',
+                           32: 'Argentina',
+                           51: 'Armenia',
+                           36: 'Australia',
+                           31: 'Azerbaijan',
+                           112: 'Belarus',
+                           76: 'Brasil',
+                           152: 'Chile',
+                           156: 'China',
+                           170: 'Colombia',
+                           196: 'Cyprus',
+                           218: 'Ecuador',
+                           818: 'Egypt',
+                           233: 'Estonia',
+                           268: 'Georgia',
+                           276: 'Germany',
+                           288: 'Ghana',
+                           332: 'Haiti',
+                           344: 'Hong Kong',
+                           356: 'India',
+                           368: 'Iraq',
+                           392: 'Japan',
+                           400: 'Jordan',
+                           398: 'Kazakhstan',
+                           414: 'Kuwait',
+                           417: 'Kyrgyzstan',
+                           422: 'Lebanon',
+                           434: 'Libya',
+                           458: 'Malaysia',
+                           484: 'Mexico',
+                           504: 'Morocco',
+                           528: 'Netherlands',
+                           554: 'New Zealand',
+                           566: 'Nigeria',
+                           586: 'Pakistan',
+                           275: 'Palestine',
+                           604: 'Peru',
+                           608: 'Philippines',
+                           616: 'Poland',
+                           634: 'Qatar',
+                           642: 'Romania',
+                           643: 'Russia',
+                           646: 'Rwanda',
+                           702: 'Singapore',
+                           705: 'Slovenia',
+                           710: 'South Africa',
+                           410: 'South Korea',
+                           724: 'Spain',
+                           752: 'Sweden',
+                           158: 'Taiwan',
+                           764: 'Thailand',
+                           780: 'Trinidad and Tobago',
+                           788: 'Tunisia',
+                           792: 'Turkey',
+                           804: 'Ukraine',
+                           858: 'Uruguay',
+                           840: 'The United States',
+                           860: 'Uzbekistan',
+                           887: 'Yemen',
+                           716: 'Zimbabwe'}
     aims_of_country_dict = {1: 'Economic growth', 2: 'Defense', 3: 'People\'s voice', 4: 'Environment'}
     aims_of_respondent_dict = {1: 'Order', 2: 'People\'s voice', 3: 'Fight rising price', 4: 'Freedom of speech'}
     aims_most_important_dict = {1: 'Economic stability', 2: 'Humanity', 3: 'Ideas', 4: 'Fight against crime'}
 
-    tidy_dataset = []
-    for dataset in dataset_list:
-        dataset = dataset[selected_columns]
-        dataset.columns = renamed_columns
-        dataset = dataset.replace({'CountryRegion': country_region_dict,
-                                   'Aim_country_first': aims_of_country_dict,
-                                   'Aim_country_second': aims_of_country_dict,
-                                   'Aim_respondent_first': aims_of_respondent_dict,
-                                   'Aim_respondent_second': aims_of_respondent_dict,
-                                   'Most_important_first': aims_most_important_dict,
-                                   'Most_important_second': aims_most_important_dict
-                                   }
-                                  )
-        tidy_dataset.append(dataset)
+    dataset = dataset[selected_columns]
+    dataset.columns = renamed_columns
+    dataset = dataset.replace({'CountryRegion': country_region_dict,
+                               'Aim_country_first': aims_of_country_dict,
+                               'Aim_country_second': aims_of_country_dict,
+                               'Aim_respondent_first': aims_of_respondent_dict,
+                               'Aim_respondent_second': aims_of_respondent_dict,
+                               'Most_important_first': aims_most_important_dict,
+                               'Most_important_second': aims_most_important_dict
+                               })
 
-    return pd.concat(tidy_dataset)
+    return dataset
 
 
 # Import datasets
-China = pd.read_excel('Data_raw/China/China_code.xlsx')
-HongKong = pd.read_excel('Data_raw/Hong Kong/HongKong_code.xlsx')
-Taiwan = pd.read_excel('Data_raw/Taiwan/Taiwan_code.xlsx')
-US = pd.read_excel('Data_raw/US/US_code.xlsx')
+files = os.listdir('Data_raw')
+files_xlsx = [f for f in files if f[-4:] == 'xlsx']
+WVS_dataset = pd.DataFrame()
+for file in files_xlsx:
+    data = pd.read_excel('Data_raw/' + file)
+    WVS_dataset = WVS_dataset.append(data)
 
-WVS_dataset = tidying([China, HongKong, Taiwan, US])
+WVS_dataset = tidying(WVS_dataset)
+WVS_dataset = WVS_dataset.reset_index(drop=True)
