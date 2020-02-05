@@ -115,7 +115,7 @@ def tidying(dataset):
                            36: 'Australia',
                            31: 'Azerbaijan',
                            112: 'Belarus',
-                           76: 'Brasil',
+                           76: 'Brazil',
                            152: 'Chile',
                            156: 'China',
                            170: 'Colombia',
@@ -144,28 +144,27 @@ def tidying(dataset):
                            554: 'New Zealand',
                            566: 'Nigeria',
                            586: 'Pakistan',
-                           275: 'Palestine',
                            604: 'Peru',
                            608: 'Philippines',
                            616: 'Poland',
                            634: 'Qatar',
                            642: 'Romania',
-                           643: 'Russia',
+                           643: 'Russian Federation',
                            646: 'Rwanda',
                            702: 'Singapore',
                            705: 'Slovenia',
                            710: 'South Africa',
-                           410: 'South Korea',
+                           410: 'Korea, Republic of',
                            724: 'Spain',
                            752: 'Sweden',
-                           158: 'Taiwan',
+                           158: 'Taiwan, Province of China',
                            764: 'Thailand',
                            780: 'Trinidad and Tobago',
                            788: 'Tunisia',
                            792: 'Turkey',
                            804: 'Ukraine',
                            858: 'Uruguay',
-                           840: 'The United States',
+                           840: 'United States',
                            860: 'Uzbekistan',
                            887: 'Yemen',
                            716: 'Zimbabwe'}
@@ -190,10 +189,10 @@ def tidying(dataset):
 # Import datasets
 files = os.listdir('Data_raw')
 files_xlsx = [f for f in files if f[-4:] == 'xlsx']
-WVS_dataset = pd.DataFrame()
+WVS = pd.DataFrame()
 for file in files_xlsx:
     data = pd.read_excel('Data_raw/' + file)
-    WVS_dataset = WVS_dataset.append(data)
+    WVS = WVS.append(data)
 
-WVS_dataset = tidying(WVS_dataset)
-WVS_dataset = WVS_dataset.reset_index(drop=True)
+WVS = tidying(WVS)
+WVS = WVS.reset_index(drop=True)
