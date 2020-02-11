@@ -2,39 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0db3f15f-e876-4373-952c-6a4e8ed3d987" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.Assignment2.ipynb.icloud" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data_raw/.China.xlsx.icloud" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data_raw/.Estonia.xlsx.icloud" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data_raw/.Germany.xlsx.icloud" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data_raw/.Haiti.xlsx.icloud" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data_raw/.India.xlsx.icloud" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data_raw/.Japan.xlsx.icloud" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data_raw/.Libya.xlsx.icloud" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data_raw/.Mexico.xlsx.icloud" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data_raw/.Netherlands.xlsx.icloud" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data_raw/.Nigeria.xlsx.icloud" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data_raw/.Russia.xlsx.icloud" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data_raw/.Singapore.xlsx.icloud" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data_raw/.South_Africa.xlsx.icloud" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data_raw/.Turkey.xlsx.icloud" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data_raw/.US.xlsx.icloud" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment2.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data_raw/China.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data_raw/Estonia.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data_raw/Germany.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data_raw/Haiti.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data_raw/India.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data_raw/Japan.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data_raw/Libya.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data_raw/Mexico.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data_raw/Netherlands.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data_raw/Nigeria.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data_raw/Russia.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data_raw/Singapore.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data_raw/South_Africa.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data_raw/Turkey.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data_raw/US.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,6 +103,7 @@
       <workItem from="1580847242123" duration="7825000" />
       <workItem from="1580860546400" duration="1933000" />
       <workItem from="1581013967585" duration="7000" />
+      <workItem from="1581390499746" duration="147000" />
     </task>
     <task id="LOCAL-00001" summary="Added assignment requirements">
       <created>1579814246149</created>
@@ -198,7 +168,14 @@
       <option name="project" value="LOCAL" />
       <updated>1580851833961</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Finalized">
+      <created>1581390539946</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1581390539946</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -215,17 +192,18 @@
     <MESSAGE value="Generated correlation heatmap" />
     <MESSAGE value="Updated the correlation heatmap" />
     <MESSAGE value="Added more data" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added more data" />
+    <MESSAGE value="Finalized" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finalized" />
   </component>
   <component name="WindowStateProjectService">
     <state x="648" y="283" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1579915172307">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="648" y="283" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1579915172307" />
-    <state x="375" y="91" key="CommitChangelistDialog2" timestamp="1580865682172">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state x="328" y="88" key="CommitChangelistDialog2" timestamp="1581390538403">
+      <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="328" y="88" key="CommitChangelistDialog2/0.0.1680.1050@0.0.1680.1050" timestamp="1580851829696" />
+    <state x="328" y="88" key="CommitChangelistDialog2/0.0.1680.1050@0.0.1680.1050" timestamp="1581390538403" />
     <state x="375" y="110" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1580266249530" />
     <state x="375" y="91" key="CommitChangelistDialog2/1920.70.1680.1050/0.0.1920.1080@0.0.1920.1080" timestamp="1580865682172" />
     <state width="1878" height="269" key="GridCell.Tab.0.bottom" timestamp="1580865255837">
@@ -257,10 +235,10 @@
     </state>
     <state x="341" y="164" key="SettingsEditor/0.0.1680.1050@0.0.1680.1050" timestamp="1579814084917" />
     <state x="390" y="169" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1579916368895" />
-    <state x="503" y="274" key="Vcs.Push.Dialog.v2" timestamp="1580865684410">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state x="440" y="266" key="Vcs.Push.Dialog.v2" timestamp="1581390542531">
+      <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="440" y="266" key="Vcs.Push.Dialog.v2/0.0.1680.1050@0.0.1680.1050" timestamp="1580851845259" />
+    <state x="440" y="266" key="Vcs.Push.Dialog.v2/0.0.1680.1050@0.0.1680.1050" timestamp="1581390542531" />
     <state x="503" y="274" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1580266252729" />
     <state x="503" y="274" key="Vcs.Push.Dialog.v2/1920.70.1680.1050/0.0.1920.1080@0.0.1920.1080" timestamp="1580865684410" />
     <state width="960" height="540" key="XDebugger.FullValuePopup" timestamp="1579842950162">
